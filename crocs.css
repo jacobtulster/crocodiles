@@ -25,12 +25,12 @@ div#header h1 {
   margin: 20px auto; /* centered heading with some margin */
 }
 
-#schultz {
+#schulz {
   text-align: center;
   font-size: 24px;
 }
 
-#schultz p {
+#schulz p {
   font-style: italic;
   font-family: "Oswald", sans-serif;
 }
@@ -121,9 +121,10 @@ div#header h1 {
   font-size: 24px;
   font-style: italic;
 }
-/* Image container styling */
+/* image container styling */
 figure.market-image,
-figure.sunflower-image {
+figure.sunflower-image,
+figure.schulz-image {
     max-width: 1000px;  /* maximum width */
     margin: 2em auto;  /* center with vertical spacing */
     text-align: center;  /* center the image and caption */
@@ -131,7 +132,8 @@ figure.sunflower-image {
 
 /* Image styling */
 figure.market-image img,
-figure.sunflower-image img {
+figure.sunflower-image img,
+figure.schulz-image img {
     width: 100%;  /* image will fill width */
     max-width: 600px;  /* maximum width of image */
     height: auto;  /* maintain aspect ratio */
@@ -141,7 +143,8 @@ figure.sunflower-image img {
 
 /* Caption styling */
 figure.market-image figcaption,
-figure.sunflower-image figcaption {
+figure.sunflower-image figcaption,
+figure.schulz-image figcaption {
     margin-top: 1em;  /* space between image and caption */
     font-style: italic;
     color: #000000;
@@ -151,7 +154,8 @@ figure.sunflower-image figcaption {
 /* adjustments for smaller screens */
 @media (max-width: 768px) {
     figure.market-image img,
-    figure.sunflower-image img {
+    figure.sunflower-image img,
+    figure.schulz-image img {
         max-width: 100%;  /* smaller screens, image can be full width */
     }
 }
