@@ -122,32 +122,40 @@ div#header h1 {
   font-style: italic;
 }
 /* image container styling */
-figure.market-image {
-  max-width: 1000px;
-  margin: 2em auto;
-  text-align: center;
+figure.market-image,
+figure.sunflower-image,
+figure.schulz-image {
+    max-width: 1000px;  /* maximum width */
+    margin: 2em auto;  /* center with vertical spacing */
+    text-align: center;  /* center the image and caption */
 }
 
 /* Image styling */
-figure.market-image img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+figure.market-image img,
+figure.sunflower-image img,
+figure.schulz-image img {
+    width: 100%;  /* image will fill width */
+    max-width: 600px;  /* maximum width of image */
+    height: auto;  /* maintain aspect ratio */
+    border-radius: 8px;  /* slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* shadow */
 }
 
 /* Caption styling */
-figure.market-image figcaption {
-  margin-top: 1em;
-  font-style: italic;
-  color: #000000;
-  font-size: 0.9em;
+figure.market-image figcaption,
+figure.sunflower-image figcaption,
+figure.schulz-image figcaption {
+    margin-top: 1em;  /* space between image and caption */
+    font-style: italic;
+    color: #000000;
+    font-size: 0.9em;
 }
 
 /* adjustments for smaller screens */
 @media (max-width: 768px) {
-  figure.market-image img {
-      max-width: 100%;
-  }
+    figure.market-image img,
+    figure.sunflower-image img,
+    figure.schulz-image img {
+        max-width: 100%;  /* smaller screens, image can be full width */
+    }
 }
