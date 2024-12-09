@@ -6,7 +6,7 @@
 
 body {
   background-color: #779c78;
-  margin: 0; /* Remove default body margin */
+  margin: 0; /* remove default body margin */
 }
 
 div#header {
@@ -22,7 +22,7 @@ div#header h1 {
   -webkit-text-stroke: 0.1px white;
   padding: 0.2em 0.5em;
   border-radius: 10px; 
-  margin: 20px auto; /* Center the heading with some margin */
+  margin: 20px auto; /* centered heading with some margin */
 }
 
 #schultz {
@@ -93,9 +93,9 @@ div#header h1 {
 #quote1 {
     font-style: italic;
     font-family: Playfair Display, sans-serif;
-    border-left: 4px solid #556b2f; /* Accent color */
-    padding-left: 15px; /* Space between text and border */
-    color: #000000; /* Text color */
+    border-left: 4px solid #556b2f; /* accent colour */
+    padding-left: 15px; /* space between text and border */
+    color: #000000; /* text colour */
     margin: 20px auto; /* Vertical margin */
     font-size: 24px; /* Font size */
     line-height: 1.5; /* Line height for readability */
@@ -112,12 +112,46 @@ div#header h1 {
 }
 
 #furtherReading h3 span {
-  background-color: #556b2f; /* Highlight color */
-  padding: 2px 4px; /* Padding around the text */
-  display: inline; /* Ensures the highlight only covers the text */
+  background-color: #556b2f; /* highlight colour */
+  padding: 2px 4px; /* padding around the text */
+  display: inline; /* highlight only covers the text */
 }
 #furtherReadingText p, #furtherReadingReference p {
   font-family: 'Playfair Display', sans-serif;
   font-size: 24px;
   font-style: italic;
+}
+/* Image container styling */
+figure.market-image,
+figure.sunflower-image {
+    max-width: 1000px;  /* maximum width */
+    margin: 2em auto;  /* center with vertical spacing */
+    text-align: center;  /* center the image and caption */
+}
+
+/* Image styling */
+figure.market-image img,
+figure.sunflower-image img {
+    width: 100%;  /* image will fill width */
+    max-width: 600px;  /* maximum width of image */
+    height: auto;  /* maintain aspect ratio */
+    border-radius: 8px;  /* slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* shadow */
+}
+
+/* Caption styling */
+figure.market-image figcaption,
+figure.sunflower-image figcaption {
+    margin-top: 1em;  /* space between image and caption */
+    font-style: italic;
+    color: #000000;
+    font-size: 0.9em;
+}
+
+/* adjustments for smaller screens */
+@media (max-width: 768px) {
+    figure.market-image img,
+    figure.sunflower-image img {
+        max-width: 100%;  /* smaller screens, image can be full width */
+    }
 }
