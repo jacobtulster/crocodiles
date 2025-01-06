@@ -1,16 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+  background-color: #779c78;
+  margin: 0; /* remove default body margin */
+}
+
+div#header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
 div#header h1 {
   font-family: "Righteous", sans-serif;
+  font-size: 80px;
   background-color: #556b2f;
-  -webkit-text-stroke: 0.2px white;
-  display: inline-block;
+  -webkit-text-stroke: 0.1px white;
   padding: 0.2em 0.5em;
   border-radius: 10px; 
-  width: fit-content;
-  margin: 0 auto;
-}
-body {
-  background-color: #888da7;
+  margin: 20px auto; /* centered heading with some margin */
 }
 
+#schultz {
+  text-align: center;
+  font-size: 40px;
+}
+
+#schultz p {
+  font-style: italic;
+  font-family: "Oswald", sans-serif;
+}
+
+#about h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+#about + p {
+  font-family: 'Cabin', sans-serif;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+#about-para p {
+  font-family: 'Cabin', sans-serif;
+  font-size: 24px;
+}
+
+#extract-title h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+#extract-title h3 span {
+  background-color: #556b2f;
+}
+
+#extract-chapter-one-title h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+#extract-chapter-one-title h2 span {
+  background-color: #556b2f;
+  border-radius: 5px;
+}
+
+#c1-para1 p,
+#c1-para2 p,
+#c1-para3 p,
+#c1-para4 p,
+#c1-para5 p,
+#c1-para6 p,
+#c1-para7 p,
+#c1-para8 p,
+#c1-para9 p {
+    font-family: 'Cabin', sans-serif;
+    font-size: 24px;
+}
+
+#quote1 {
+    font-style: italic;
+    font-family: Playfair Display, sans-serif;
+    border-left: 4px solid #556b2f; /* accent colour */
+    padding-left: 15px; /* space between text and border */
+    color: #000000; /* text colour */
+    margin: 20px auto; /* Vertical margin */
+    font-size: 24px; /* Font size */
+    line-height: 1.5; /* Line height for readability */
+}
+
+#quote1::before,
+#quote1::after {
+    content: '';
+}
+#furtherReading h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+#furtherReading h3 span {
+  background-color: #556b2f; /* highlight colour */
+  padding: 2px 4px; /* padding around the text */
+  display: inline; /* highlight only covers the text */
+}
+#furtherReadingText p, #furtherReadingReference p {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+}
+/* Image container styling */
+figure.market-image,
+figure.sunflower-image {
+    max-width: 1000px;  /* maximum width */
+    margin: 2em auto;  /* center with vertical spacing */
+    text-align: center;  /* center the image and caption */
+}
+
+/* Image styling */
+figure.market-image img,
+figure.sunflower-image img {
+    width: 100%;  /* image will fill width */
+    max-width: 600px;  /* maximum width of image */
+    height: auto;  /* maintain aspect ratio */
+    border-radius: 8px;  /* slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* shadow */
+}
+
+/* Caption styling */
+figure.market-image figcaption,
+figure.sunflower-image figcaption {
+    margin-top: 1em;  /* space between image and caption */
+    font-style: italic;
+    color: #000000;
+    font-size: 0.9em;
+}
+
+/* adjustments for smaller screens */
+@media (max-width: 768px) {
+    figure.market-image img,
+    figure.sunflower-image img {
+        max-width: 100%;  /* smaller screens, image can be full width */
+    }
+}
